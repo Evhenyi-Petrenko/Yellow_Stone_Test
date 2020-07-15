@@ -1,0 +1,38 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="18px" height="18px">
+    <defs>
+        <filter filterUnits="userSpaceOnUse" id="Filter_0" x="-1px" y="-1px" width="19px" height="19px"  >
+            <feOffset in="SourceAlpha" dx="0" dy="1" />
+            <feGaussianBlur result="blurOut" stdDeviation="1" />
+            <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+            <feComposite operator="atop" in="floodOut" in2="blurOut" />
+            <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter filterUnits="userSpaceOnUse" id="Filter_1" x="5px" y="5px" width="7px" height="7px"  >
+            <feOffset in="SourceAlpha" dx="0" dy="1" />
+            <feGaussianBlur result="blurOut" stdDeviation="1" />
+            <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+            <feComposite operator="atop" in="floodOut" in2="blurOut" />
+            <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+    </defs>
+    <g filter="url(#Filter_0)">
+        <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+              d="M8.000,1.000 C11.314,1.000 14.000,3.686 14.000,7.000 C14.000,10.313 11.314,13.000 8.000,13.000 C4.686,13.000 2.000,10.313 2.000,7.000 C2.000,3.686 4.686,1.000 8.000,1.000 Z"/>
+    </g>
+    <g filter="url(#Filter_1)">
+        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+              d="M8.000,5.800 C8.663,5.800 9.200,6.337 9.200,7.000 C9.200,7.662 8.663,8.200 8.000,8.200 C7.337,8.200 6.800,7.662 6.800,7.000 C6.800,6.337 7.337,5.800 8.000,5.800 Z"/>
+    </g>
+</svg>
